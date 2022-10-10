@@ -57,13 +57,6 @@ int main(void)
                 currentNumber += (currentDigits[i] - '0') * pow(10, digitCounter - 1 - i);
             }
 
-            printf("Current digits : ");
-            for (int i = 0; i < digitCounter; i++)
-            {
-                printf("%c", currentDigits[i]);
-            }
-            printf("\n");
-
             // Insert the number in the array and increment the number of values in it
             insertion(array, nbValue, currentNumber);
             nbValue++;
